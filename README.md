@@ -1,0 +1,1 @@
+A clone of [Google's](http://www.google.com) homepage built with HTML and CSS. I employed svgs, and used the amazing flexbox layout as my tool of choice. From The Odin Project's [curriculum](http://www.theodinproject.com/courses/web-development-101/lessons/html-css).
