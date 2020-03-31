@@ -13,8 +13,8 @@
                     <img id="logo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="google logo"/>
                     <form name="search">
                         <div id="search-bar-container">
-                                           
-                            <input type="search" id="search-bar" name="search"/>
+
+                            <input type="text" id="search-bar" name="search" value="build this webpage"/>
                             <div id="magnifying-container">
                                 <svg id="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#9AA0A6" width="18px" height="18px">
                                     <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/>
@@ -23,7 +23,13 @@
                         </div>
                     </form>
                     <div id="right-icons">
-                        <p>icons</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z" />
+                            <path d="M0 0h24v24H0z" fill="none" />
+                        </svg>
+                        <div id="profile">
+                            <img src="https://lh3.googleusercontent.com/-qzQe3rDXZys/AAAAAAAAAAI/AAAAAAAAAAA/AAKWJJOecssgv3QZDbNH5ZBO6AgbzL8NcA.CMID/s64-c/photo.jpg" alt="darth-vader"/>
+                        </div>
                     </div>
                 </div>
 
@@ -45,7 +51,9 @@
                         </li>
                         <li>
                             <a class="options" href="">
-                                <svg focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 11h6v2h-6v-2zm-6 6h12v-2H6v2zm0-4h4V7H6v6zm16-7.22v12.44c0 1.54-1.34 2.78-3 2.78H5c-1.64 0-3-1.25-3-2.78V5.78C2 4.26 3.36 3 5 3h14c1.64 0 3 1.25 3 2.78zM19.99 12V5.78c0-.42-.46-.78-1-.78H5c-.54 0-1 .36-1 .78v12.44c0 .42.46.78 1 .78h14c.54 0 1-.36 1-.78V12zM12 9h6V7h-6v2z"></path></svg>
+                                <svg focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 11h6v2h-6v-2zm-6 6h12v-2H6v2zm0-4h4V7H6v6zm16-7.22v12.44c0 1.54-1.34 2.78-3 2.78H5c-1.64 0-3-1.25-3-2.78V5.78C2 4.26 3.36 3 5 3h14c1.64 0 3 1.25 3 2.78zM19.99 12V5.78c0-.42-.46-.78-1-.78H5c-.54 0-1 .36-1 .78v12.44c0 .42.46.78 1 .78h14c.54 0 1-.36 1-.78V12zM12 9h6V7h-6v2z"></path>
+                                </svg>
                                 News
                             </a>
                         </li>
@@ -68,9 +76,9 @@
                         </li>
                         <li>
                             <a class="options" href="">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
-                                    <path d="M0 0h24v24H0z" fill="none" />
-                                    <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
+                                <svg class="more" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                                    <path d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
                                 </svg>
                                 More
                             </a>
@@ -89,14 +97,128 @@
                             </a>
                         </li>
                     </ol>
-
                 </div>
             </div>
-            <div id="bottom-header"></div>
+            <main>
+                <div id="result-amount">
+                    <p>About 108,000,000 results (0.66 seconds)</p>
+                </div>
+
+                <!--Top results-->
+                <div id="top-result">
+                    <p class="result-main-content">TO CREATE A <strong>WEBSITE</strong> WITH WORDPRESS (OR JOOMLA & DRUPAL), USE ONE CLICK INSTALLATION: Log in to your hosting account. Go to your control panel. Look for the “WordPress” or <strong>“Website”</strong> icon. Choose the domain where you want to install your <strong>website</strong>.</p>
+                    
+                    <a class="result-hyperlink" href="#">
+                        <div><p>victor-lf.github.io › google-search-results<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                            <path d="M7 10l5 5 5-5z"/>
+                            <path d="M0 0h24v24H0z" fill="none"/>
+                        </svg></p></div>
+                        
+                        
+                        <h3 class="hyperlink">build this webpage - GitHub Pages</h3>
+                    </a>
+                </div>
+                <div id="top-result-footer">
+                    <span class="top-result-footer-containers">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                            <path d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/>
+                        </svg>
+                        <a href="#">About featured snippets</a>
+                        
+                    </span>
+                    <span class="top-result-footer-containers">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                            <path d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 12h-2v-2h2v2zm0-4h-2V6h2v4z"/>
+                        </svg>
+                        <a href="#">Feedback</a> 
+                    </span>
+                </div>
+
+                <!--Standard results-->
+                <div class="standard-result">
+                    <a class="result-hyperlink" href="#">
+                        <div><p>victor-lf.github.io › google-search-results<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                            <path d="M7 10l5 5 5-5z"/>
+                            <path d="M0 0h24v24H0z" fill="none"/>
+                        </svg></p></div>
+                        
+                        <h3 class="hyperlink">build this webpage - GitHub Pages</h3>
+                    </a>
+                    <p class="standard-result-content">
+                        TO CREATE A <strong>WEBSITE</strong> WITH WORDPRESS (OR JOOMLA & DRUPAL), USE ONE CLICK INSTALLATION: Log in to your hosting account. Go to your control panel. Look for the “WordPress” or <strong>“Website”</strong> icon. Choose the domain where you want to install your <strong>website</strong>.
+                    </p>
+                </div>
+                <div class="standard-result">
+                    <a class="result-hyperlink" href="#">
+                        <div><p>www.websitebuilderexpert.com › building-websites<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                            <path d="M7 10l5 5 5-5z"/>
+                            <path d="M0 0h24v24H0z" fill="none"/>
+                        </svg></p></div>
+                        
+                        <h3 class="hyperlink">How to Build a Webiste: the Step-by-step Guide to Easy Setup...</h3>
+                    </a>
+                    <p class="standard-result-content">
+                        <span class="date">
+                            Mar 18, 2020 -
+                        </span>
+                        Not sure how to <strong>build</strong> a <strong>website</strong>? It actually is not that hard. You don't have to be technical at all. With our handy guide, you can get started ...
+                    </p>
+                </div>
+
+                <div id="people-also-ask">
+                    <h3>People also ask</h3>
+                    <div class="question-row">
+                        <p>How can I create my own webpage?</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                            <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+                            <path d="M0 0h24v24H0V0z" fill="none"/>
+                        </svg>
+                    </div>
+                    <div class="question-row">
+                        <p>How much does it cost to build a website?</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                            <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+                            <path d="M0 0h24v24H0V0z" fill="none"/>
+                        </svg>
+                    </div>
+                    <div class="question-row">
+                        <p>How do I create a professional website?</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                            <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+                            <path d="M0 0h24v24H0V0z" fill="none"/>
+                        </svg>
+                    </div>
+                    <div class="question-row">
+                        <p>How do you create a website for free?</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                            <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+                            <path d="M0 0h24v24H0V0z" fill="none"/>
+                        </svg>
+                    </div>
+                    <div class="question-row">
+                        <p>How much does a website cost monthly?</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                            <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+                            <path d="M0 0h24v24H0V0z" fill="none"/>
+                        </svg>
+                    </div>
+                    <div class="question-row">
+                        <p>How long does it take to code a website?</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                            <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+                            <path d="M0 0h24v24H0V0z" fill="none"/>
+                        </svg>
+                    </div>
+                    
+                </div>
+                <p>Hello world</p>
+                <p>Hello baby</p>
+                <p>hello bih</p>
+            </main>
             
-            <p>Hello world</p>
-            <p>Hello baby</p>
-            <p>hello bih</p>
+            
         </div>
     </body>
 </html>
