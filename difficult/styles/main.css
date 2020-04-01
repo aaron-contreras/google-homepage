@@ -163,32 +163,33 @@ main svg {
 .result-hyperlink .hyperlink {
     margin: 0;
     margin-bottom: 5px;
-    color: rgb(0, 0, 238);
+    color: #1a0dab;
     font-weight: normal;
     font-size: 20px;    
 }
-#top-result-footer {
+.result-footer {
     display: flex;
     justify-content: flex-end;
     margin-bottom: 27px;
     padding: 5px 20px 5px 0px;
     font-size: 12px;
 }
-.top-result-footer-containers {
+.result-footer-container {
     margin-left: 25px;
     display: flex;
     align-items: flex-end;
 }
-#top-result-footer svg {
+.result-footer svg {
     margin-right: 8px;
     width: 16px;
     height: 16px;
 }
-#top-result-footer a {
+.result-footer a {
     color: #70757a;
     text-decoration: none;
 }
 .standard-result {
+    width: 600px;
     margin-bottom: 27px;
 }
 .standard-result-content {
@@ -221,4 +222,18 @@ main svg {
 }
 .question-row p {
     margin: 0;
+}
+.result-questions .question-row {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 14px;
+}
+.with-questions {
+    margin-bottom: 8px;
+}
+.show-more {
+    justify-content: flex-start;
+}
+.show-more p {
+    margin-left: 10px;
 }
