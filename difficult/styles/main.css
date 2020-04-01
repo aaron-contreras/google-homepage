@@ -237,3 +237,47 @@ main svg {
 .show-more p {
     margin-left: 10px;
 }
+.related-search {
+    margin-bottom: 25px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #e5e5e5;
+}
+.related-bar {
+    margin: 15px 0 5px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.related-search p {
+    color: #70757a;
+}
+.related-bar a {
+    width: 77px;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    text-decoration: none;
+    color: #1a0dab;
+}
+.title-bar {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title-bar h4 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: normal;
+}
+.title-bar p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.related-search h3 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: normal;
+    color: #70757a;
+}
