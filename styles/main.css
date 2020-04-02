@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+}
+.logo {
+    width: 25%;
+    min-width: 200px;
+    animation-duration: 1.5s;
+    animation-name: perpetual;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+@keyframes perpetual {
+    25% {
+        transform: scale(1.25);
+    }
+}
+.link-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.link-container h2 {
+    color: #333;
+}
+.link-container a {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 50px;
+    text-decoration: none;
+    color: #333;
+    transition: font-size, 0.5s;
+    font-size: inherit;
+}
+.link-container a:hover {
+    transition: font-size, 0.5s;
+    font-size: 22px;
+}
+@media (max-width: 500px) {
+    .link-container a {
+        font-size: 16px;
+        margin: 0 30px;
+    }
+    .link-container a:hover {
+        font-size: 20px;
+    }
+}
